@@ -1,0 +1,18 @@
+{
+    "login": [
+      { "id": 1, "email": "abc@email.com", "password": "abc123" },
+      { "id": 2, "email": "xyz@email.com", "password": "jfn" },
+      { "id": 3, "email": "pqr@email.com", "password": "cbv" },
+      { "id": 4, "email": "stu@email.com", "password": "jhs" },
+      { "id": 5, "email": "lmn@email.com", "password": "123" }
+    ],
+    "questions": [
+      { "id": 1, "Question-Statement": "What is your name",
+      "option-A": "AAA",
+      "option-B": "BBB",
+      "option-C": "CCC",
+      "option-D": "DDD",
+      "correct-option": "A"
+    }
+    ]
+  }
