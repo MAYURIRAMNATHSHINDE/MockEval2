@@ -32,9 +32,46 @@
         <h2>Login Page</h2>
         <input type="email" id="email" placeholder="Enter email here...">
         <input type="password" id="passward" placeholder="Enter Password">
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" id="loginButton">
     </form>
     
 </body>
-<script src="./index.js" type="module"></script>
+<script src="./index.js" type="module">
+
+    
+   let LoginDataArray=[...data];
+   console.log(LoginDataArray);
+   
+getData();
+async function getData(){
+   try{
+       let res=await fetch("https://discovered-respected-vacation.glitch.me");
+       let data=await res.json();
+       return data;
+   }
+   catch(err){
+       console.log(err)
+   }
+}
+let form=document.getElementById("form");
+let LoginBtn=document.getElementById("loginButton");
+LoginBtn.addEventListener("submit",function(arr){
+    let checkCredential=LoginDataArray.map((ele,i)=>{
+        if(ele.email==login.email)
+        {
+            alert("Login Success, you are redirecting to quiz page");
+            window.location.href="./quiz.html";
+        }
+        else{
+            alert("Incorrect")
+        }
+    })
+ 
+})
+   
+    
+    
+</script>
+
+
 </html>
